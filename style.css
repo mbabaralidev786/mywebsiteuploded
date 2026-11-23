@@ -487,7 +487,8 @@ h1, h2, h3, h4, .logo-title {
 .model-desc {
   color: var(--text-muted);
   font-size: 0.9rem;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  line-height: 1.6;
   flex-grow: 1;
 }
 
