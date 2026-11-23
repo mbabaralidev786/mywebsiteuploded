@@ -3,19 +3,34 @@
 // ===================================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Nav Toggle
+  // Mobile Nav Toggle with Icon Switch
   const toggleBtn = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
 
   if (toggleBtn && navMenu) {
     toggleBtn.addEventListener('click', () => {
       navMenu.classList.toggle('active');
+      const icon = toggleBtn.querySelector('i');
+      if (icon) {
+        if (navMenu.classList.contains('active')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
+        } else {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      }
     });
 
-    // Close menu when clicking a link
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
+    // Close menu when clicking any nav link or WhatsApp button
+    navMenu.querySelectorAll('.nav-link, .mobile-menu-btn').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
       });
     });
   }

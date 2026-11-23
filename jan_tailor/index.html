@@ -39,6 +39,9 @@
         <a href="#order" class="nav-link">Measurement Guide</a>
         <a href="#reviews" class="nav-link">Reviews</a>
         <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/923202124730" target="_blank" class="btn btn-primary mobile-menu-btn">
+          <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+        </a>
       </nav>
 
       <a href="https://wa.me/923202124730" target="_blank" class="btn btn-primary nav-btn">
@@ -99,11 +102,11 @@
       <div class="models-grid">
         <!-- Model 1: Classic White Cotton Suit -->
         <div class="model-card">
-          <div class="model-image-wrap">
+          <div class="model-image-wrap" onclick="openModal('img-model1', 'The Royal White Cotton Suit', 'Handcrafted from fine Egyptian Giza cotton with crisp band collar, French cuffs, and precision stitching.')" title="Tap to preview">
             <img src="images/model1.jpg" alt="Young Man in Classic White Shalwar Kameez" class="model-img" id="img-model1">
             <span class="model-badge">Most Popular</span>
             <div class="model-overlay">
-              <button class="quick-view-btn" onclick="openModal('img-model1', 'The Royal White Cotton Suit', 'Handcrafted from fine Egyptian Giza cotton with crisp band collar, French cuffs, and precision stitching.')">
+              <button class="quick-view-btn">
                 <i class="fa-solid fa-expand"></i> View Detail
               </button>
             </div>
@@ -125,11 +128,11 @@
 
         <!-- Model 2: Charcoal Black / Navy Blue Designer Kurta Shalwar -->
         <div class="model-card featured">
-          <div class="model-image-wrap">
+          <div class="model-image-wrap" onclick="openModal('img-model2', 'The Midnight Onyx Kurta Suit', 'Deep charcoal black wash-and-wear fabric with subtle tonal silk embroidery on placket, slim-fit silhouette.')" title="Tap to preview">
             <img src="images/model2.jpg" alt="Young Man in Elegant Black Kurta Shalwar" class="model-img" id="img-model2">
             <span class="model-badge badge-gold">Premium Edition</span>
             <div class="model-overlay">
-              <button class="quick-view-btn" onclick="openModal('img-model2', 'The Midnight Onyx Kurta Suit', 'Deep charcoal black wash-and-wear fabric with subtle tonal silk embroidery on placket, slim-fit silhouette.')">
+              <button class="quick-view-btn">
                 <i class="fa-solid fa-expand"></i> View Detail
               </button>
             </div>
@@ -151,11 +154,11 @@
 
         <!-- Model 3: Festive Emerald Green / Royal Blue with Waistcoat -->
         <div class="model-card">
-          <div class="model-image-wrap">
+          <div class="model-image-wrap" onclick="openModal('img-model3', 'Royal Festive Suit with Waistcoat', 'Rich jewel-toned fabric paired with a tailored textured Prince-coat style waistcoat, brass crest buttons.')" title="Tap to preview">
             <img src="images/model3.jpg" alt="Man in Royal Green Shalwar Kameez with Waistcoat" class="model-img" id="img-model3">
             <span class="model-badge">Festive / Mehndi</span>
             <div class="model-overlay">
-              <button class="quick-view-btn" onclick="openModal('img-model3', 'Royal Festive Suit with Waistcoat', 'Rich jewel-toned fabric paired with a tailored textured Prince-coat style waistcoat, brass crest buttons.')">
+              <button class="quick-view-btn">
                 <i class="fa-solid fa-expand"></i> View Detail
               </button>
             </div>
@@ -521,6 +524,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Action Button for Mobile & Desktop -->
+  <a href="https://wa.me/923202124730" class="floating-whatsapp" target="_blank" aria-label="Order on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp Order</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
